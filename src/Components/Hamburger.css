@@ -1,0 +1,53 @@
+@media screen and (max-width:992px){
+  .line{
+      width:20px;
+      height:3px;
+      background:#fff;
+      margin:3px;
+      border-radius:2px;
+      transition: all .5s ease-in-out;
+  }
+  
+  .middle-line::after{
+      content:"";
+      width:20px;
+      height:3px;
+      background:#fff;
+      display:block;
+      border-radius:2px;
+      transition: all .5s ease-in-out;
+  }
+
+   .hamburger{
+       display:inline-block;
+       cursor:pointer;
+ 
+       z-index:2;
+       transition: all .5s ease-in-out;
+border:2px solid #fff;
+border-radius:5px;
+padding:5px;
+   }
+
+
+ 
+
+   .hamburger.open .bottom-line {
+       transform: translateX(-50px);
+       background:transparent;
+   }
+   
+.hamburger.open .top-line{
+    transform: translateX(-50px);
+       background:transparent;
+}
+   .hamburger.open .middle-line{
+       transform:rotate(45deg);
+   }
+
+   .hamburger.open .middle-line::after{
+       transform:rotate(-90deg);
+   }
+  
+
+}

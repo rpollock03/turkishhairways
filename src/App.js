@@ -1,13 +1,15 @@
 import React from "react"
 
 import Nav from "./Components/Navbar"
-
+import Jumbotron from "./Components/Jumbotron"
+import About from "./Components/About"
 
 function App() {
   return (
     <div className="App">
       <Nav />
-      <h1>START</h1>
+      <Jumbotron />
+      <About />
 
     </div>
   );

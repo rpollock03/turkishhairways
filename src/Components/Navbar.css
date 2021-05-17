@@ -1,0 +1,32 @@
+
+.nav-text{
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600
+}
+
+.nav-text:hover{
+    color: red
+}
+
+.book-btn{
+    background-color: red;
+     outline: none;
+  border: none;
+font-size: 1.2em;
+    font-weight: 600
+}
+
+.book-btn:hover{
+    background-color: white;
+    color:red
+}
+
+.contact-banner{
+    background-color: rgba(49,49,49);
+    width: 100vw;
+    color: white;
+    height:40px;
+    line-height:40px;
+}
+
