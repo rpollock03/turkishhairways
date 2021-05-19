@@ -49,3 +49,27 @@
   opacity: 0; 
   transform: scale(0.1, 1);
 }
+
+
+.main-title{
+  font-size:2.5em;
+  font-weight:600
+}
+
+.sub-title{
+  font-size:1.2em;
+  font-weight:400
+}
+
+
+
+@media (max-width: 768px){
+.main-title{
+  font-size:2em;
+}
+.sub-title{
+  font-size:1em;
+ 
+}
+
+}

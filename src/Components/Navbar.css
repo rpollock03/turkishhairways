@@ -30,3 +30,14 @@ font-size: 1.2em;
     line-height:40px;
 }
 
+@media (max-width: 768px){
+    .contact-banner{
+        font-size:0.8em
+    }
+    .nav-text{
+        font-size:1em
+    }
+    .book-btn{
+        font-size:1em
+    }
+}

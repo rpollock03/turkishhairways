@@ -7,6 +7,8 @@ import { Map, GoogleApiWrapper, Marker } from "google-maps-react"
 
 import "./About.css"
 
+const MAP_KEY = process.env.REACT_APP_MAP_KEY
+
 const About = (props) => {
 
     const [hideSection, setHideSection] = useState(true)
@@ -37,18 +39,8 @@ const About = (props) => {
 
                 <SectionTitle text="Walk-ins welcome!" />
 
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked />
-                    <label class="form-check-label" for="flexRadioDefault1">
-                        Bangor
-  </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
-                    <label class="form-check-label" for="flexRadioDefault2">
-                        Donaghadee
-  </label>
-                </div>
+                <button className="btn btn-outline-danger ">Bangor</button>
+                <button className="btn btn-outline-danger ">Donaghadee</button>
                 <div className="container mt-3" >
                     <div className="row">
 
@@ -101,13 +93,39 @@ const About = (props) => {
                         </div>
 
                         <div className="col-lg-4 ">
-                            <iframe src='https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Flisa.mcarthur.3304%2Fposts%2F10157719076338030&show_text=true&width=500' width="500" height="187" style={{ border: "none", overflow: "hidden" }} scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+
+
+
+
+
+
                         </div>
                         <div className="col-lg-4 ">
                             <h1>test</h1>
                         </div>
 
                     </div>
+                </div>
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <iframe src='https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Flisa.mcarthur.3304%2Fposts%2F10157719076338030&show_text=true&width=500' width="500" height="187" style={{ border: "none", overflow: "hidden" }} scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        </div>
+                        <div class="carousel-item">
+                            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fangie.wells.39750%2Fposts%2F249566013172295&show_text=true&width=500" width="500" height="187" style={{ border: "none", overflow: "hidden" }} scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        </div>
+                        <div class="carousel-item">
+                            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fwalker.ewart%2Fposts%2F10217962165866203&show_text=true&width=500" width="500" height="187" style={{ border: "none", overflow: "hidden" }} scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
             </div>
         </section>
@@ -122,5 +140,5 @@ const About = (props) => {
 
 
 export default GoogleApiWrapper({
-    apiKey: "AIzaSyA5rgR2FGuhiye5tSd-F5TV4C_JAErLcXM"
+    apiKey: MAP_KEY
 })(About)

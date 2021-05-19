@@ -24,8 +24,8 @@ const Jumbotron = () => {
                     <div className="col-12 col-lg-8 d-flex align-items-center justify-content-end" style={{ color: "white" }}>
 
                         <div>
-                            <h1 class=" mb-2" style={{ fontSize: "2.5rem", fontWeight: "600" }}>Welcome aboard.</h1>
-                            <p class="mb-4" style={{ fontSize: "1.2rem", fontWeight: "400" }}>North Down's premium Turkish barber services at an affordable price.</p><p class="lead">
+                            <h1 class="main-title mb-2" >Welcome aboard.</h1>
+                            <p class="sub-title mb-4" >North Down's premium Turkish barber services at an affordable price.</p><p class="lead">
                                 <a class="btn btn-danger  " href="#" role="button"><i class="far fa-calendar-alt"></i> Book an appointment</a>
 
                             </p>
